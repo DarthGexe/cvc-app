@@ -1,6 +1,6 @@
 import TableData from "../../components/TableData"
 async function getData() {
-    const response = await fetch('http://backend:8000/api', { cache: 'no-store' });
+    const response = await fetch('https://cvc-app-api.onrender.com/api', { cache: 'no-store' });
     const data = await response.json();
 
     console.log(data);
