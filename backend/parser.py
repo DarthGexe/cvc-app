@@ -2,9 +2,6 @@ import json
 import pandas as pd
 import numpy as np
 
-cont = 59
-lvl = 33
-
 def parser(row):
     data=dict(row['kingdom'])
     row['name'] = data['name']
@@ -36,11 +33,7 @@ def process_data():
 
     df.drop('kingdom',  axis=1, inplace=True)
 
-
-    #df = drop_continent(df, cont)
-
     data = df.to_dict(orient='records')
-    #data = df.to_json(orient='records')
 
     return data
 

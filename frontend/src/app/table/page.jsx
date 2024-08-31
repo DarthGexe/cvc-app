@@ -1,7 +1,6 @@
 import TableData from "../../components/TableData"
-//import TableData from "../../components/Test"
 async function getData() {
-    const response = await fetch('http://0.0.0.0:8000/api', { cache: 'no-store' });
+    const response = await fetch('http://backend:8000/api', { cache: 'no-store' });
     const data = await response.json();
 
     console.log(data);
