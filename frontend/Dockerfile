@@ -5,6 +5,8 @@ WORKDIR .
 # Copiar archivos del proyecto
 COPY . .
 
+
+RUN npm install
 # Instalar dependencias de Shadcn UI
 RUN npx shadcn-ui@latest init
 RUN npx shadcn-ui@latest add select button
@@ -12,10 +14,9 @@ RUN npx shadcn-ui@latest add dropdown-menu
 RUN npx shadcn-ui@latest add select
 
 # Instalar dependencias adicionales
-RUN npm install next-themes lucide-react clsx tailwind-merge recharts
+#RUN npm install next-themes lucide-react clsx tailwind-merge recharts
 
 
-RUN npm install
 # Construir la aplicación
 RUN npm run build
 
