@@ -7,12 +7,12 @@ COPY . .
 
 
 RUN npm install
-RUN npm install shadcn-ui@latest
+#RUN npm install shadcn-ui@latest
 # Instalar dependencias de Shadcn UI
-RUN npm shadcn-ui@latest init
-RUN npm shadcn-ui@latest add select button
-RUN npm shadcn-ui@latest add dropdown-menu
-RUN npm shadcn-ui@latest add select
+#RUN npm shadcn-ui@latest init
+#RUN npm shadcn-ui@latest add select button
+#RUN npm shadcn-ui@latest add dropdown-menu
+#RUN npm shadcn-ui@latest add select
 
 # Instalar dependencias adicionales
 #RUN npm install next-themes lucide-react clsx tailwind-merge recharts
