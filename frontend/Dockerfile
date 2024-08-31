@@ -7,6 +7,7 @@ COPY . .
 
 
 RUN npm install
+RUN npm install shadcn-ui@latest
 # Instalar dependencias de Shadcn UI
 RUN npx shadcn-ui@latest init
 RUN npx shadcn-ui@latest add select button
