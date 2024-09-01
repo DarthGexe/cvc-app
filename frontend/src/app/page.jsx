@@ -15,7 +15,7 @@ export default function Home() {
         setIsSubmitting(true)
         const data = e.target.rawdata.value
         try {
-            const res = await fetch('http://0.0.0.0/api', {
+            const res = await fetch('http://0.0.0.0:8000/api', {
                 method: 'POST',
                 body: JSON.stringify({ "data": data }),
                 headers: { 'Content-Type': 'application/json' }
