@@ -1,6 +1,6 @@
 import TableData from "../../components/TableData"
 async function getData() {
-    const response = await fetch('http://0.0.0.0:8000/api', { cache: 'no-store' });
+    const response = await fetch('http://vmi1493491.contaboserver.net:8000/api', { cache: 'no-store' });
     const data = await response.json();
 
     console.log(data);
